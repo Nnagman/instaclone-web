@@ -6,6 +6,7 @@ import {
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useForm} from "react-hook-form";
 import styled from "styled-components";
+import {logUserIn} from "../apollo";
 import AuthLayout from "../components/auth/AuthLayout";
 import BottomBox from "../components/auth/BottomBox";
 import Button from "../components/auth/Button";
@@ -40,10 +41,10 @@ function Login() {
     const {
         register,
         handleSubmit,
-        errors,
         formState,
         getValues,
         setError,
+        clearErrors,
     } = useForm({
         mode: "onChange",
     });
@@ -52,9 +53,12 @@ function Login() {
             login: {ok, error, token},
         } = data;
         if (!ok) {
-            setError("result", {
+            return setError("result", {
                 message: error,
             });
+        }
+        if (token) {
+            logUserIn(token);
         }
     };
     const [login, {loading}] = useMutation(LOGIN_MUTATION, {
@@ -68,6 +72,9 @@ function Login() {
         login({
             variables: {username, password},
         });
+    };
+    const clearLoginError = () => {
+        clearErrors("result");
     };
     return (
         <AuthLayout>
@@ -84,24 +91,26 @@ function Login() {
                                 message: "Username should be longer than 5 chars.",
                             },
                         })}
+                        onFocus={clearLoginError}
                         type="text"
                         placeholder="Username"
-                        hasError={Boolean(errors?.username?.message)}
+                        hasError={Boolean(formState.errors?.username?.message)}
                     />
-                    <FormError message={errors?.username?.message}/>
+                    <FormError message={formState.errors?.username?.message}/>
                     <Input
                         {...register('password', {required: "Password is required.",})}
+                        onFocus={clearLoginError}
                         type="password"
                         placeholder="Password"
-                        hasError={Boolean(errors?.password?.message)}
+                        hasError={Boolean(formState.errors?.password?.message)}
                     />
-                    <FormError message={errors?.password?.message}/>
+                    <FormError message={formState.errors?.password?.message}/>
                     <Button
                         type="submit"
                         value={loading ? "Loading..." : "Log in"}
                         disabled={!formState.isValid || loading}
                     />
-                    <FormError message={errors?.result?.message}/>
+                    <FormError message={formState.errors?.result?.message}/>
                 </form>
                 <Separator/>
                 <FacebookLogin>
