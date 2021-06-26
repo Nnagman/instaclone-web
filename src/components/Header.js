@@ -57,7 +57,7 @@ const IconsContainer = styled.div`
 
 function Header() {
     const isLoggedIn = useReactiveVar(isLoggedInVar);
-    const data = useUser();
+    const {data} = useUser();
     return (
         <SHeader>
             <Wrapper>
