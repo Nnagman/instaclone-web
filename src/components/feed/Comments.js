@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Comment from "./Comment";
 import {gql, useMutation} from "@apollo/client";
 import useUser from "../../hooks/useUser";
+import Input from "../auth/Input";
 
 const CREATE_COMMENT_MUTATION = gql`
     mutation createComment($photoId: Int!, $payload: String!) {
@@ -118,15 +119,17 @@ function Comments({photoId, author, caption, commentNumber, comments}) {
             {comments?.map((comment) => (
                 <Comment
                     key={comment.id}
+                    id={comment.id}
+                    photoId={photoId}
                     author={comment.user.username}
                     payload={comment.payload}
+                    isMine={comment.isMine}
                 />
             ))}
             <PostCommentContainer>
                 <form onSubmit={handleSubmit(onValid)}>
                     <PostCommentInput
-                        name="payload"
-                        ref={register({required: true})}
+                        {...register('payload', {required: true})}
                         type="text"
                         placeholder="Write a comment..."
                     />
