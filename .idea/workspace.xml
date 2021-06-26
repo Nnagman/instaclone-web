@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45b77ae8-311f-4ad8-89e0-b206e9055b73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apollo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/apollo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/auth/AuthLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/AuthLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,8 @@
       <workItem from="1623829239867" duration="1239000" />
       <workItem from="1623905976246" duration="357000" />
       <workItem from="1623985421941" duration="5911000" />
-      <workItem from="1624240004835" duration="16970000" />
+      <workItem from="1624240004835" duration="17040000" />
+      <workItem from="1624666835105" duration="577000" />
     </task>
     <servers />
   </component>
