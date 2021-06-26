@@ -44,7 +44,6 @@ const LOGIN_MUTATION = gql`
 
 function Login() {
     const location = useLocation();
-    console.log(location);
     const {
         register,
         handleSubmit,
