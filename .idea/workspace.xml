@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45b77ae8-311f-4ad8-89e0-b206e9055b73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-06-28__5_23__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021-06-28_오후_5_23_[Default_Changelist]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apollo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/apollo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feed/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/Comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
       <workItem from="1623985421941" duration="5911000" />
       <workItem from="1624240004835" duration="17040000" />
       <workItem from="1624666835105" duration="14350000" />
-      <workItem from="1625541432822" duration="330000" />
+      <workItem from="1625541432822" duration="1029000" />
     </task>
     <servers />
   </component>

@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Comment from "./Comment";
 import {gql, useMutation} from "@apollo/client";
 import useUser from "../../hooks/useUser";
-import Input from "../auth/Input";
 
 const CREATE_COMMENT_MUTATION = gql`
     mutation createComment($photoId: Int!, $payload: String!) {
